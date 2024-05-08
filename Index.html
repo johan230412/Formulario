@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Tecnológico</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        form:hover {
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+        span {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #495057;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        input[type="week"],
+        input[type="month"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            transition: border-color 0.2s ease-in-out;
+        }
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus,
+        input[type="week"]:focus,
+        input[type="month"]:focus {
+            border-color: #80bdff;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+        <form action="">
+            <label for="nombre">
+                <span>¿Cuál es tu nombre?</span>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </label>
+            <label for="inicio-platzi">
+                <span>¿Qué día iniciaste en Platzi?</span>
+                <input type="date" id="inicio-platzi" name="inicio-platzi" required />
+            </label>
+            <label for="horario">
+                <span>¿En qué horario estudias?</span>
+                <input type="time" id="horario" name="horario" required />
+            </label>
+            <label for="hora">
+                <span>Hora</span>
+                <input type="time" id="hora" name="hora" required />
+            </label>
+            <label for="dia">
+                <span>Día</span>
+                <input type="date" id="dia" name="dia" required />
+            </label>
+            <label for="semana">
+                <span>Semana</span>
+                <input type="week" id="semana" name="semana" required />
+            </label>
+            <label for="mes">
+                <span>Mes</span>
+                <input type="month" id="mes" name="mes" required />
+            </label>
+            <input type="submit" value="Enviar">
+        </form>          
+    </body>
+        <input type="submit" value="Enviar">
+    </form>          
+</body>
+</html>
